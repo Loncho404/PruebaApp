@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>compras</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="background">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">compras</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button [routerLink]="['/home']" tab="home">
+      <ion-icon name="home"></ion-icon>
+      Home
+    </ion-tab-button>
+    <ion-tab-button [routerLink]="['/login']" tab="radio">
+      <ion-icon name="person"></ion-icon>
+      Login
+    </ion-tab-button>
+    <ion-tab-button [routerLink]="['/compras']" tab="library">
+      <ion-icon name="library"></ion-icon>
+      Compras
+    </ion-tab-button>
+    <ion-tab-button [routerLink]="['/buscador']" tab="search">
+      <ion-icon name="search"></ion-icon>
+      Buscador
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
